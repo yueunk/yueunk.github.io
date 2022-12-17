@@ -134,7 +134,7 @@ input, select, textarea {
 		text-align: start;
 	}
 
-	p.no-bottom-margin {
+	.no-bottom-margin {
 		margin-bottom: 0;
 	}
 
@@ -2059,13 +2059,13 @@ input, select, textarea {
 			width: 6em;
 		}
 
-		header.major.long:after {
+		header.major.short:after {
 			background: rgba(144, 144, 144, 0.5);
 			content: '';
 			display: inline-block;
 			height: 1px;
 			margin-top: 1.5em;
-			width: 12.75em;
+			width: 3em;
 		}
 
 		header.major.clear:after {
@@ -2425,6 +2425,15 @@ input, select, textarea {
 				width: 100%;
 				padding-bottom: 2em;
 			}
+
+		.cat-icon {
+			opacity: 0.75;
+			transition: 0.2s;
+		}
+
+		.cat-icon:hover {
+			opacity: 1;
+		}
 
 /* List */
 
@@ -3340,7 +3349,10 @@ input, select, textarea {
 	@media screen and (max-width: 980px) {
 
 		/* List */
-
+			ul.icons {
+				text-align: center;
+			}
+			
 			ul.major-icons li {
 				padding: 2em;
 			}
@@ -3359,9 +3371,9 @@ input, select, textarea {
 
 		/* Header */
 
-			#header {
+			/* #header {
 				padding: 8em 3em 8em 3em ;
-			}
+			} */
 
 		/* Footer */
 
@@ -3410,7 +3422,6 @@ input, select, textarea {
 			}
 
 		/* List */
-
 			ul.major-icons li {
 				padding: 1.5em;
 			}
